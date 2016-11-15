@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-After [downloading this example](https://github.com/graphcool-examples/react-apollo-instagram-example/archive/master.zip) please follow these steps.
+After [downloading this example](https://github.com/graphcool-examples/react-native-apollo-instagram-example/archive/master.zip) please follow these steps.
 
 ### 1. Create an account
 
