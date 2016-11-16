@@ -23,7 +23,7 @@ type Post {
 
 ### 2. Configure app data endpoint
 
-Open `src/index.android.js` and paste your endpoint to the following line:
+Open `src/routes.js` and paste your endpoint to the following line:
 
 ```js
 const client = new ApolloClient({
@@ -37,6 +37,7 @@ You're done configuring the example application. Please run the following comman
 
 ```sh
 yarn
+react-native run-ios # or ...
 react-native run-android
 ```
 
