@@ -8,18 +8,18 @@
   },
   "dependencies": {
     "apollo-client": "^0.5.3",
-    "graphql-tag": "^0.1.16",
-    "react": "~15.3.1",
+    "graphql-tag": "^1.1.2",
+    "react": "~15.4.1",
     "react-apollo": "^0.6.0",
-    "react-native": "0.37.0",
+    "react-native": "0.38.1",
     "react-router-native": "^2.0.0-beta.0"
   },
   "devDependencies": {
     "babel-jest": "17.0.2",
     "babel-preset-react-native": "1.9.0",
-    "jest": "17.0.2",
-    "jest-react-native": "17.0.2",
-    "react-test-renderer": "~15.3.1"
+    "jest": "17.0.3",
+    "jest-react-native": "17.1.0",
+    "react-test-renderer": "~15.4.1"
   },
   "jest": {
     "preset": "jest-react-native"
