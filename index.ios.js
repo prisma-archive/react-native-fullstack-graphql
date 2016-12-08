@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native'
-import routes from './src/routes'
+import root from './src/root'
 
-AppRegistry.registerComponent('ReactNativeApolloInstagramExample', () => () => routes)
+AppRegistry.registerComponent('ReactNativeApolloInstagramExample', () => () => root)

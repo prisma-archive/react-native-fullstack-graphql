@@ -23,7 +23,7 @@ type Post {
 
 ### 2. Configure app data endpoint
 
-Open `src/routes.js` and paste your endpoint to the following line:
+Open `src/root.js` and paste your endpoint to the following line:
 
 ```js
 const client = new ApolloClient({
