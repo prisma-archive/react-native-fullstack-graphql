@@ -52,7 +52,7 @@ class CreatePage extends React.Component {
       return (
         <Image
           source={{ uri: this.state.imageUrl }}
-          style={{flex: 1, width: 200, height: 200}}
+          style={{width: 200, height: 200}}
         />
       )
     }
