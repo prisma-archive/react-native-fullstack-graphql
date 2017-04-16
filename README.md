@@ -1,18 +1,35 @@
 # react-native-apollo-instagram-example
-![](http://i.imgur.com/CH44AZF.png)
 
+* [React Native](https://facebook.github.io/react-native/): Javascript framework for building native mobile apps with [React](https://facebook.github.io/react/)
+* [Apollo Client](https://github.com/apollographql/apollo-client): Fully-featured, production ready caching GraphQL client
+* [Graphcool](https://www.graph.cool): Flexible backend platform combining GraphQL + AWS Lambda
 
-## Getting Started
+## Example ([Live demo]() & [GraphQL Playground](https://api.graph.cool/simple/v1/instagram-example))
 
-After [downloading this example](https://github.com/graphcool-examples/react-native-apollo-instagram-example/archive/master.zip) please follow these steps.
+> TODO: GIF of final product
 
-### 1. Create an account
+## Quickstart
 
-To run this example, please create a [graph.cool](http://graph.cool) account and **copy your endpoint**. This shouldn't take longer than a minute. We promise!
+For more information on how to get started [refer to the full react-native-apollo-instagram tutorial](https://www.graph.cool/docs/quickstart/react-native-apollo-instagram-example).
 
-![](http://i.imgur.com/ytXDR4B.gif)
+### 1. Clone example repository
 
-This is how our GraphQL data model looks like:
+```sh
+git clone https://github.com/graphcool-examples/react-native-apollo-instagram-example.git
+cd react-native-apollo-instagram-example
+```
+
+### 2. Create GraphQL API with [`graphcool`](https://www.npmjs.com/package/graphcool)
+
+```sh
+# Install Graphcool CLI
+npm install -g graphcool
+
+# Create a new project based on the Instagram schema
+graphcool init --url graph.cool/schema/instagram 
+```
+
+This creates a GraphQL API for the following schema:
 
 ```graphql
 type Post {
@@ -21,25 +38,27 @@ type Post {
 }
 ```
 
-### 2. Configure app data endpoint
+### 3. Connect the app with your GraphQL API
 
-Open `src/root.js` and paste your endpoint to the following line:
+Copy the `Simple API` endpoint to `./src/root.js` as the `uri` argument in the `createNetworkInterface` call:
 
 ```js
-const client = new ApolloClient({
-  networkInterface: createNetworkInterface({ uri: 'https://api.graph.cool/simple/v1/__PROJECT_ID__'}),
-})
+// replace `__SIMPLE_API_ENDPOINT__` with the endpoint from the previous step
+const networkInterface = createNetworkInterface({ uri: '__SIMPLE_API_ENDPOINT__' })
 ```
 
-### 3. Run the example
-
-You're done configuring the example application. Please run the following command. Have fun exploring! 🎉
+### 4. Install depdendencies & run locally
 
 ```sh
-yarn
-react-native run-ios # or ...
-react-native run-android
+yarn install
+yarn start # open http://localhost:3000 in your browser
 ```
+
+## Next steps
+
+* [Advanced GraphQL features](x)
+* [Authentication & Permissions](x)
+* [Implementing business logic with serverless functions](x)
 
 
 ## Help & Community [![Slack Status](https://slack.graph.cool/badge.svg)](https://slack.graph.cool)
