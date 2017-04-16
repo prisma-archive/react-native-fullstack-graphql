@@ -7,9 +7,9 @@ import { checkUri } from './utils'
 import ListPage from './components/ListPage'
 import CreatePage from './components/CreatePage'
 
-const client = new ApolloClient({
-  networkInterface: createNetworkInterface({ uri: 'https://api.graph.cool/simple/v1/__PROJECT_ID__'}),
-})
+// Paste your endpoint for the Simple API here.
+// Info: https://github.com/graphcool-examples/react-native-apollo-instagram-example#2-create-graphql-api-with-graphcool
+const networkInterface = createNetworkInterface({ uri: '__SIMPLE_API_ENDPOINT__' })
 
 // this is only for better error messages
 checkUri(client.networkInterface)
