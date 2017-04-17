@@ -26,7 +26,7 @@ cd react-native-apollo-instagram-example
 npm install -g graphcool
 
 # Create a new project based on the Instagram schema
-graphcool init --url graph.cool/schema/instagram 
+graphcool init instagram.schema 
 ```
 
 This creates a GraphQL API for the following schema:
