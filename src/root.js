@@ -11,6 +11,8 @@ import CreatePage from './components/CreatePage'
 // Info: https://github.com/graphcool-examples/react-native-apollo-instagram-example#2-create-graphql-api-with-graphcool
 const networkInterface = createNetworkInterface({ uri: '__SIMPLE_API_ENDPOINT__' })
 
+const client = new ApolloClient({networkInterface})
+
 // this is only for better error messages
 checkUri(client.networkInterface)
 
