@@ -50,8 +50,8 @@ const networkInterface = createNetworkInterface({ uri: '__SIMPLE_API_ENDPOINT__'
 ### 4. Install depdendencies & run locally
 
 ```sh
-yarn install
-yarn start # open http://localhost:3000 in your browser
+yarn install 
+react-native run-ios # or react-native run-android
 ```
 
 ## Next steps
