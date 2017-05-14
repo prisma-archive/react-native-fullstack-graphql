@@ -1,22 +1,22 @@
-# react-native-apollo-instagram-example
+# react-native-apollo-instagram-quickstart
 
 * [React Native](https://facebook.github.io/react-native/): Javascript framework for building native mobile apps with [React](https://facebook.github.io/react/)
 * [Apollo Client](https://github.com/apollographql/apollo-client): Fully-featured, production ready caching GraphQL client
 * [Graphcool](https://www.graph.cool): Flexible backend platform combining GraphQL + AWS Lambda
 
-## Example ([Live demo]() & [GraphQL Playground](https://api.graph.cool/simple/v1/cj1erhgba0uxi0109k14mdght))
+## Example ([GraphQL Playground](https://api.graph.cool/simple/v1/cj1erhgba0uxi0109k14mdght))
 
 > TODO: GIF of final product
 
 ## Quickstart
 
-For more information on how to get started [refer to the full react-native-apollo-instagram tutorial](https://www.graph.cool/docs/quickstart/react-native-apollo-instagram-example).
+For more information on how to get started [refer to the full react-native-apollo-instagram tutorial](https://www.graph.cool/docs/quickstart/).
 
 ### 1. Clone example repository
 
 ```sh
-git clone https://github.com/graphcool-examples/react-native-apollo-instagram-example.git
-cd react-native-apollo-instagram-example
+git clone https://github.com/graphcool-examples/react-native-apollo-instagram-quickstart.git
+cd react-native-apollo-instagram-quickstart
 ```
 
 ### 2. Create GraphQL API with [`graphcool`](https://www.npmjs.com/package/graphcool)
@@ -26,7 +26,7 @@ cd react-native-apollo-instagram-example
 npm install -g graphcool
 
 # Create a new project based on the Instagram schema
-graphcool init --url http://graphqlbin.com/instagram.graphql
+graphcool init --schema http://graphqlbin.com/instagram.graphql
 ```
 
 This creates a GraphQL API for the following schema:
@@ -57,8 +57,8 @@ react-native run-ios # or react-native run-android
 ## Next steps
 
 * [Advanced GraphQL features](x)
-* [Authentication & Permissions](x)
-* [Implementing business logic with serverless functions](x)
+* [Authentication & Permissions](https://www.graph.cool/docs/reference/authorization/overview-iegoo0heez/)
+* [Implementing business logic with serverless functions](https://www.graph.cool/docs/reference/functions/overview-boo6uteemo/)
 
 
 ## Help & Community [![Slack Status](https://slack.graph.cool/badge.svg)](https://slack.graph.cool)
