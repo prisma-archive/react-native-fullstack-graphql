@@ -1,7 +1,5 @@
 # Auth0 Example (with React Native & Apollo)
 
-<img src="http://openid.net/wordpress-content/uploads/2016/05/auth0-logo-blue.png" height=50>
-
 * [React Native](https://facebook.github.io/react-native/): Javascript framework for building native mobile apps with [React](https://facebook.github.io/react/)
 * [Apollo Client](https://github.com/apollographql/apollo-client): Fully-featured, production ready caching GraphQL client
 * [Auth0](https://auth0.com/): Single Sign-On & Token Based Authentication
