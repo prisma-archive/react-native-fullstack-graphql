@@ -14,7 +14,7 @@
 
 ```sh
 git clone https://github.com/graphcool-examples/react-native.git
-cd react/authentication-with-expo-and-auth0
+cd react-native-graphql/authentication-with-expo-and-auth0
 ```
 
 ### 2.s Create GraphQL API with [`graphcool`](https://www.npmjs.com/package/graphcool)
