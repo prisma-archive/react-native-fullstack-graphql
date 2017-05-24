@@ -12,7 +12,7 @@
 
 ```sh
 git clone https://github.com/graphcool-examples/react-native.git
-cd react-native/quickstart-with-expo-and-relay-pokedex
+cd react-native-graphql/quickstart-with-expo-and-relay-pokedex
 ```
 
 ### 2. Create GraphQL API with [`graphcool`](https://www.npmjs.com/package/graphcool)
