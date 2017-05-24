@@ -13,7 +13,7 @@
 
 ```sh
 git clone https://github.com/graphcool-examples/react-native.git
-cd react/authentication-with-auth0-and-apollo
+cd react-native-graphql/authentication-with-auth0-and-apollo
 ```
 
 ### 2. Create GraphQL API with [`graphcool`](https://www.npmjs.com/package/graphcool)
