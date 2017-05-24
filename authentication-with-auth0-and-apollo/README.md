@@ -56,7 +56,8 @@ const AUTH0_DOMAIN = ''
 
 ```sh
 yarn install
-yarn start // this will run the react-native packager use react-native run-ios or react-native run-android to run with device
+yarn start # this will run the react-native packager 
+# use react-native run-ios or react-native run-android to run with device
 ```
 
 ## Next steps
