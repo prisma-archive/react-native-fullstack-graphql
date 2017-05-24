@@ -14,7 +14,7 @@ For more information on how to get started [refer to the full react-native-apoll
 
 ```sh
 git clone https://github.com/graphcool-examples/react-native.git
-cd react-native/quickstart-with-apollo
+cd react-native-graphql/quickstart-with-apollo
 ```
 
 ### 2. Create GraphQL API with [`graphcool`](https://www.npmjs.com/package/graphcool)
