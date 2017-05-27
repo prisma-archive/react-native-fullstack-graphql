@@ -13,7 +13,7 @@ For more information on how to get started [refer to the full react-native-apoll
 ### 1. Clone example repository
 
 ```sh
-git clone https://github.com/graphcool-examples/react-native.git
+git clone https://github.com/graphcool-examples/react-native-graphql.git
 cd react-native-graphql/quickstart-with-apollo
 ```
 

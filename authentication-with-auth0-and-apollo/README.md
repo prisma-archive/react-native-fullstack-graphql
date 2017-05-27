@@ -10,7 +10,7 @@
 ### 1. Clone example repository
 
 ```sh
-git clone https://github.com/graphcool-examples/react-native.git
+git clone https://github.com/graphcool-examples/react-native-graphql.git
 cd react-native-graphql/authentication-with-auth0-and-apollo
 ```
 
