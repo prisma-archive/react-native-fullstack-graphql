@@ -5,6 +5,9 @@
 * [Apollo Client](https://github.com/apollographql/apollo-client): Fully-featured, production ready caching GraphQL client
 * [Graphcool](https://www.graph.cool): Flexible backend platform combining GraphQL + AWS Lambda
 
+<p style="border:1px solid black;" align="center">
+  <img style="border:1px solid black;" src="http://imgur.com/7k9rSAm.png" />
+</p>
 
 ## Getting Started
 
@@ -63,16 +66,13 @@ const wsClient = new SubscriptionClient('__SUBSCRIPTIONS_API_ENDPOINT__')
 You can obtain the `Susbcriptions API` endpoint by typing `graphcool endpoints` in the same directory where you invoked `graphcool init --schema https://graphqlbin.com/chat.graphql` before or by clicking the **Endpoints** button in the bottom-left of the [Graphcool Console](https://console.graph.cool).
 
 
-### 4. Install depdendencies & run locally
+### 4. Install dependencies & run locally
 
 ```sh
 yarn install
 yarn run ios # opens the simulator
 # yarn run android 
 ```
-
-![](http://imgur.com/TQgwy1i.png)
-
 
 ## Next steps
 
