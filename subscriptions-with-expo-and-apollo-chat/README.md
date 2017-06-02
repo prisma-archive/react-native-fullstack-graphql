@@ -71,9 +71,6 @@ yarn run ios # opens the simulator
 # yarn run android 
 ```
 
-![](http://imgur.com/TQgwy1i.png)
-
-
 ## Next steps
 
 * [Advanced GraphQL features](https://www.graph.cool/docs/tutorials/advanced-features-eath7duf7d/)
