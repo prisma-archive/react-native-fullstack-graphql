@@ -5,6 +5,9 @@
 * [Apollo Client](https://github.com/apollographql/apollo-client): Fully-featured, production ready caching GraphQL client
 * [Graphcool](https://www.graph.cool): Flexible backend platform combining GraphQL + AWS Lambda
 
+<p align="center">
+  <img style="border:1px solid black;" src="http://imgur.com/7k9rSAm.png" />
+</p>
 
 ## Getting Started
 
@@ -70,10 +73,6 @@ yarn install
 yarn run ios # opens the simulator
 # yarn run android 
 ```
-
-<p align="center">
-  <img style="border:1px solid black;" src="http://imgur.com/7k9rSAm.png" />
-</p>
 
 ## Next steps
 
