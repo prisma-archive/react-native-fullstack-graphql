@@ -72,7 +72,7 @@ yarn run ios # opens the simulator
 ```
 
 <p align="center">
-  <img src="http://imgur.com/7k9rSAm.png" />
+  <img style="border:0.5px solid black;" src="http://imgur.com/7k9rSAm.png" />
 </p>
 
 ## Next steps
