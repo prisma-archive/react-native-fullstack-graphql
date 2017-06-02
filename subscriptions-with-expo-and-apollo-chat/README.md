@@ -71,7 +71,9 @@ yarn run ios # opens the simulator
 # yarn run android 
 ```
 
-![](http://imgur.com/7k9rSAm.png)
+<p align="center">
+  <img src="http://imgur.com/7k9rSAm.png" />
+</p>
 
 ## Next steps
 
