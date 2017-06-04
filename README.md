@@ -43,8 +43,8 @@ A big thank you to all contributors and supporters of this repository 💚
 <a href="https://github.com/marktani/" target="_blank">
   <img src="https://github.com/marktani.png?size=64" width="64" height="64" alt="marktani">
 </a>
-<a href="https://github.com/stubailo/" target="_blank">
-  <img src="https://github.com/timsuchanek.png?size=64" width="64" height="64" alt="stubailo">
+<a href="https://github.com/timsuchanek/" target="_blank">
+  <img src="https://github.com/timsuchanek.png?size=64" width="64" height="64" alt="timsuchanek">
 </a>
 
 
