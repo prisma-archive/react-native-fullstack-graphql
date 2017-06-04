@@ -1,0 +1,8 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/Lock" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/SimpleKeychain" "${PODS_ROOT}/Headers/Public/TouchIDAuth"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/Lock" "$PODS_CONFIGURATION_BUILD_DIR/Masonry" "$PODS_CONFIGURATION_BUILD_DIR/SimpleKeychain" "$PODS_CONFIGURATION_BUILD_DIR/TouchIDAuth"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/Lock" -isystem "${PODS_ROOT}/Headers/Public/Masonry" -isystem "${PODS_ROOT}/Headers/Public/SimpleKeychain" -isystem "${PODS_ROOT}/Headers/Public/TouchIDAuth"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"Lock" -l"Masonry" -l"SimpleKeychain" -l"TouchIDAuth" -framework "CoreGraphics" -framework "Foundation" -framework "LocalAuthentication" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -framework "WebKit"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods
