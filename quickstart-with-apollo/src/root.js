@@ -3,7 +3,7 @@ import { ApolloProvider, createNetworkInterface, ApolloClient } from 'react-apol
 import ListPage from './components/ListPage'
 
 // __SIMPLE_API_ENDPOINT_ looks similar to: `https://api.graph.cool/simple/v1/<PROJECT_ID>`
-const networkInterface = createNetworkInterface({ uri: '__SIMPLE_API_ENDPOINT_' })
+const networkInterface = createNetworkInterface({ uri: '__SIMPLE_API_ENDPOINT__' })
 const client = new ApolloClient({ networkInterface })
 
 export default (
