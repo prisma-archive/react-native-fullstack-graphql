@@ -73,7 +73,8 @@ Now copy over your **domain**, **client id** and **client secret** from the prev
 3. From the expo URL that you see in the address bar on top, copy everything **except for the colon and port** as shown in this screenshot: ![](http://i.imgur.com/8f0qPdg.png)
 4. In `main.js`, set the `redirect_uri` variable by replacing the part `<Expo URL without Port>` with the value you just copied; note that you need to do this in the first part of the `if`-clause, the `else`-part is for the case where the app has been published, then Expo will set the variable for you  
 5. Lastly, back on the config page of the `instagram-example-graphcool` client on the [Auth0 website](https://manage.auth0.com/#/clients) copy the _full value_ of `redirect_uri` from `main.js` into the field **Allowed Callback URLs** (it will look similar to `exp://da-x7f.johndoe.expo-auth0.exp.direct/+/redirect`)
-6. Make sure to click **Save Changes** on the bottom of the page
+6. Make sure that the `JsonWebToken Signature Algorithm` is set to HS256: ![](http://i.imgur.com/h1IW0rN.png)
+7. Make sure to click **Save Changes** on the bottom of the page
 
 
 ### 4. Connect the app with your GraphQL API
