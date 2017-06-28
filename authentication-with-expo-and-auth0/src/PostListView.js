@@ -63,7 +63,12 @@ class PostListView extends React.Component {
   componentDidMount() {
 
     // handle redirects after auth0 authentication
-    Linking.addEventListener('url', this._handleAuth0Redirect)
+    Linking.addEventListener('url', this._handleAuth0Redirect);
+    Linking.getInitialURL().then(
+        url => {
+            return this._handleAuth0RedirectUrl(url);
+        }
+    );
 
     // check if a user already exists
     client.query({query: currentUserQuery}).then(
@@ -113,6 +118,7 @@ class PostListView extends React.Component {
           animationType='slide'
           transparent={true}
           visible={this.state.modalVisible}
+          onRequestClose={() => {}}
         >
           <CreatePostView
             userId={this.state.user && this.state.user.id}
@@ -176,11 +182,18 @@ class PostListView extends React.Component {
   }
 
   _handleAuth0Redirect = async (event) => {
-    if (!event.url.includes('+/redirect')) {
-      return
+      if (!event.url.includes('+/redirect')) {
+          return;
+      }
+      Exponent.WebBrowser.dismissBrowser();
+      this._handleAuth0RedirectUrl(event.url)
+  }
+
+  _handleAuth0RedirectUrl = async (url) => {
+    if (!url.includes('+/redirect')) {
+      return;
     }
-    Exponent.WebBrowser.dismissBrowser()
-    const [, queryString] = event.url.split('#')
+    const [, queryString] = url.split('#')
     const responseObj = queryString.split('&').reduce((map, pair) => {
       const [key, value] = pair.split('=')
       map[key] = value // eslint-disable-line
