@@ -49,7 +49,7 @@ const networkInterface = createNetworkInterface({ uri: '__SIMPLE_API_ENDPOINT__'
 
 ```sh
 yarn install
-yarn start # starts the packager
+npm start # starts the packager
 react-native run-ios # opens the simulator
 # or react-native run-android
 ```
