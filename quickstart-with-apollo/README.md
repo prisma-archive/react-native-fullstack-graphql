@@ -19,7 +19,7 @@ cd react-native-graphql/quickstart-with-apollo
 
 ```sh
 # Install Graphcool Framework CLI
-npm install -g graphcool@next
+npm install -g graphcool
 
 # Create a new service inside a directory called `server`
 graphcool init server
