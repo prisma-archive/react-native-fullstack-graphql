@@ -1,6 +1,7 @@
 import React from 'react'
 import Post from './Post'
-import { graphql, gql } from 'react-apollo'
+import { graphql } from 'react-apollo'
+import gql from 'graphql-tag'
 import {
   View,
   TouchableHighlight,
@@ -110,5 +111,5 @@ const styles = StyleSheet.create({
   }
 })
 
-const ListPageWithData = graphql(allPostsQuery, {name: 'allPostsQuery'})(ListPage)
-export default ListPageWithData
+export default graphql(allPostsQuery, {name: 'allPostsQuery'})(ListPage)
+

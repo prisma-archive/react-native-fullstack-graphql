@@ -73,11 +73,11 @@ Save the HTTP endpoint for the `Simple API` from the output, you'll need it in t
 
 ### 5. Connect the app with your GraphQL API
 
-Paste the `Simple API` endpoint to `./src/root.js` as the `uri` argument in the `createNetworkInterface` call:
+Paste the `Simple API` endpoint to `./App.js` as the `uri` argument in the `createNetworkInterface` call:
 
 ```js
 // replace `__SIMPLE_API_ENDPOINT__` with the endpoint from the previous step
-const networkInterface = createNetworkInterface({ uri: '__SIMPLE_API_ENDPOINT__' })
+const httpLink = new HttpLink({ uri: '__SIMPLE_API_ENDPOINT__' })
 ```
 
 > **Note**: If you ever lose your endpoint, you can get access to it again with the `graphcool info` command.
@@ -87,9 +87,9 @@ const networkInterface = createNetworkInterface({ uri: '__SIMPLE_API_ENDPOINT__'
 ```sh
 cd ..
 yarn install
-yarn start # starts the packager
-react-native run-ios # opens the simulator
-# or react-native run-android
+yarn start          # open using the Expo app on your phone
+# yarn run ios      # open with iOS simulator
+# yarn run android  # open with Android emulator
 ```
 
 ## Next steps

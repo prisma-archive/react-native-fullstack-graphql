@@ -1,6 +1,15 @@
 import React from 'react'
-import { graphql, gql } from 'react-apollo'
-import { View, TextInput, Button, Image, Text, StyleSheet, TouchableHighlight } from 'react-native'
+import { graphql } from 'react-apollo'
+import gql from 'graphql-tag'
+import { 
+  View, 
+  TextInput, 
+  Button, 
+  Image, 
+  Text, 
+  StyleSheet, 
+  TouchableHighlight 
+} from 'react-native'
 
 const createPostMutation = gql`
   mutation ($description: String!, $imageUrl: String!){
@@ -143,6 +152,4 @@ const styles = StyleSheet.create({
   },
 })
 
-const PageWithMutation = graphql(createPostMutation, {name: 'createPostMutation'})(CreatePage)
-
-export default PageWithMutation
+export default graphql(createPostMutation, {name: 'createPostMutation'})(CreatePage)
