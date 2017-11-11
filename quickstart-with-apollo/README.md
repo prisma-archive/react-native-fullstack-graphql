@@ -4,8 +4,6 @@
 * [Apollo Client](https://github.com/apollographql/apollo-client): Fully-featured, production ready caching GraphQL client
 * [Graphcool](https://www.graph.cool): Flexible backend platform combining GraphQL + AWS Lambda
 
-![](https://camo.githubusercontent.com/16899577cd7900f79f765d0689ff7664cf704ea5/687474703a2f2f696d6775722e636f6d2f547036356d45632e676966)
-
 ## Quickstart
 
 ### 1. Clone example repository
