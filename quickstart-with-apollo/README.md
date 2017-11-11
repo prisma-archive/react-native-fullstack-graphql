@@ -73,7 +73,7 @@ Save the HTTP endpoint for the `Simple API` from the output, you'll need it in t
 
 ### 5. Connect the app with your GraphQL API
 
-Paste the `Simple API` endpoint to `./App.js` as the `uri` argument in the `createNetworkInterface` call:
+Paste the HTTP endpoint for the `Simple API` that you saved after running `graphcool deploy` into `./App.js` as the `uri` argument in the `HttpLink` constructor call:
 
 ```js
 // replace `__SIMPLE_API_ENDPOINT__` with the endpoint from the previous step
