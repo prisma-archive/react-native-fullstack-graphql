@@ -25,7 +25,7 @@
     "react": "16.0.0-alpha.6",
     "react-apollo": "1.4.16",
     "react-native": "0.44.3",
-    "react-native-gifted-chat": "0.1.5",
+    "react-native-gifted-chat": "0.3.0",
     "sillyname": "0.1.0",
     "subscriptions-transport-ws": "0.6.0"
   }
