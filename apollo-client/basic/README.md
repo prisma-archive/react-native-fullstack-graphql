@@ -1,16 +1,14 @@
-**PRs are welcome!**
 
 # react-native-apollo-basic
 
 🚀 Basic starter code for a mobile app based on React Native, GraphQL & Apollo Client.
 
-## TODO (❌  **This project is currently broken** ❌)
+![](https://imgur.com/LG6r1q1.png)
+
+## TODO (PRs are welcome)
 
 - [ ] Fix runtime issue
 - [ ] Enable in [https://github.com/graphql-cli/graphql-cli/blob/master/src/cmds/create/boilerplates.ts](https://github.com/graphql-cli/graphql-cli/blob/master/src/cmds/create/boilerplates.ts)
-
-
-![](https://imgur.com/LG6r1q1.png)
 
 ## Technologies
 
