@@ -1,5 +1,5 @@
 # the name for the service (will be part of the service's HTTP endpoint)
-service: graphql-boilerplate
+service: myapp21
 
 # the secret you need to access the database
 secret: mysecret123
