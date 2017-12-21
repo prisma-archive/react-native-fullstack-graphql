@@ -5,10 +5,12 @@
 
 ![](https://imgur.com/LG6r1q1.png)
 
-## TODO (PRs are welcome)
+## TODO
 
 - [ ] Fix runtime issue
 - [ ] Enable in [https://github.com/graphql-cli/graphql-cli/blob/master/src/cmds/create/boilerplates.ts](https://github.com/graphql-cli/graphql-cli/blob/master/src/cmds/create/boilerplates.ts)
+
+> **PRs are very welcome** 🙏
 
 ## Technologies
 
