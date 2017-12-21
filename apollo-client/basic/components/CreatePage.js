@@ -1,63 +1,51 @@
 import React from 'react'
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
-import { 
-  View, 
-  TextInput, 
-  Button, 
-  Image, 
-  Text, 
-  StyleSheet, 
-  TouchableHighlight 
+import {
+  View,
+  TextInput,
+  Button,
+  Image,
+  Text,
+  StyleSheet,
+  TouchableHighlight,
 } from 'react-native'
 
-const createPostMutation = gql`
-  mutation ($description: String!, $imageUrl: String!){
-    createPost(description: $description, imageUrl: $imageUrl) {
-      id
-    }
-  }
-`
-
 class CreatePage extends React.Component {
-
   state = {
     description: '',
     imageUrl: '',
   }
 
-  render () {
-
+  render() {
     return (
       <View style={styles.container}>
-
         <View style={styles.addImageContainer}>
           <View style={styles.addImage}>
             <View style={styles.photoPlaceholderContainer}>
-              {
-                this.state.imageUrl.length > 0 ?
-                  <Image
-                    source={{uri: this.state.imageUrl}}
-                    style={{height: 80, width: 80}}
-                    resizeMode='contain'
-                  />
-                  :
-                  <View style={styles.photoPlaceholder} />
-              }
+              {this.state.imageUrl.length > 0 ? (
+                <Image
+                  source={{ uri: this.state.imageUrl }}
+                  style={{ height: 80, width: 80 }}
+                  resizeMode="contain"
+                />
+              ) : (
+                <View style={styles.photoPlaceholder} />
+              )}
             </View>
             <TextInput
               style={styles.imageUrlInput}
-              placeholder='Paste your image URL here...'
-              onChangeText={(text) => this.setState({imageUrl: text})}
+              placeholder="Paste your image URL here..."
+              onChangeText={text => this.setState({ imageUrl: text })}
               value={this.state.imageUrl}
-              placeholderTextColor='rgba(42,126,211,.5)'
+              placeholderTextColor="rgba(42,126,211,.5)"
             />
           </View>
         </View>
         <TextInput
           style={styles.descriptionInput}
-          placeholder='Type a description...'
-          onChangeText={(text) => this.setState({description: text})}
+          placeholder="Type a description..."
+          onChangeText={text => this.setState({ description: text })}
           value={this.state.description}
         />
 
@@ -75,21 +63,18 @@ class CreatePage extends React.Component {
             <Text style={styles.saveButtonText}>Create Post</Text>
           </TouchableHighlight>
         </View>
-
       </View>
     )
   }
 
-   _createPost = async () => {
-     const {description, imageUrl} = this.state
-     await this.props.createPostMutation({
-       variables: {description, imageUrl}
-     })
-     this.props.onComplete()
-   }
+  _createPost = async () => {
+    const { description, imageUrl } = this.state
+    await this.props.createPostMutation({
+      variables: { description, imageUrl },
+    })
+    this.props.onComplete()
+  }
 }
-
-
 
 const styles = StyleSheet.create({
   container: {
@@ -97,7 +82,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'stretch',
-    backgroundColor: 'rgba(255,255,255,1)'
+    backgroundColor: 'rgba(255,255,255,1)',
   },
   addImageContainer: {
     backgroundColor: 'rgba(0,0,0,.03)',
@@ -152,4 +137,16 @@ const styles = StyleSheet.create({
   },
 })
 
-export default graphql(createPostMutation, {name: 'createPostMutation'})(CreatePage)
+const CREATE_POST_MUTATION = gql`
+  mutation CreatePostMutation($description: String!, $imageUrl: String!) {
+    createPost(description: $description, imageUrl: $imageUrl) {
+      id
+      description
+      imageUrl
+    }
+  }
+`
+
+export default graphql(CREATE_POST_MUTATION, {
+  name: 'createPostMutation', // name of the injected prop: this.props.createPostMutation...
+})(CreatePage)

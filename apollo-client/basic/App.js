@@ -4,12 +4,11 @@ import { ApolloProvider } from 'react-apollo'
 import { ApolloClient, HttpLink, InMemoryCache } from 'apollo-client-preset'
 import ListPage from './components/ListPage'
 
-// __SIMPLE_API_ENDPOINT__ looks like: 'https://api.graph.cool/simple/v1/__SERVICE_ID__'
-const httpLink = new HttpLink({ uri: '__SIMPLE_API_ENDPOINT__' })
+const httpLink = new HttpLink({ uri: 'http://localhost:4000' })
 
 const client = new ApolloClient({
   link: httpLink,
-  cache: new InMemoryCache()
+  cache: new InMemoryCache(),
 })
 
 export default class App extends React.Component {
