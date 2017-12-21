@@ -1,4 +1,6 @@
-❌ This project is currently in a **broken** state: There seems to be a dependency issue when running the app in the simulator: Unable to resolve module `react-native/Libraries/Renderer/shims/ReactNativeBridgeEventPlugin` from `.../node_modules/react-native-gesture-handler/GestureHandler.js`: Module does not exist in the module map. ❌ **PRs are welcome!**
+❌ This project is currently in a **broken** state: There seems to be a dependency issue when running the app in the simulator: Unable to resolve module `react-native/Libraries/Renderer/shims/ReactNativeBridgeEventPlugin` from `.../node_modules/react-native-gesture-handler/GestureHandler.js`: Module does not exist in the module map. ❌ 
+
+**PRs are welcome!**
 
 # react-native-apollo-basic
 
