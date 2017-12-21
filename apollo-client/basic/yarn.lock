@@ -46,9 +46,9 @@
   dependencies:
     cross-spawn "^5.1.0"
 
-"@expo/vector-icons@^6.1.0":
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-6.2.0.tgz#1269b263c3d78609cfa5e65b9b524aeb4718c335"
+"@expo/vector-icons@^6.2.2":
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-6.2.2.tgz#441edb58a52c0f4e5b4aba1e6f8da1e87cea7e11"
   dependencies:
     lodash "^4.17.4"
     react-native-vector-icons "4.4.2"
@@ -183,7 +183,7 @@ ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
 
-ansi-styles@^3.0.0, ansi-styles@^3.1.0:
+ansi-styles@^3.0.0, ansi-styles@^3.1.0, ansi-styles@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.2.0.tgz#c159b8d5be0f9e5a6f346dab94f16ce022161b88"
   dependencies:
@@ -637,6 +637,12 @@ babel-plugin-react-transform@2.0.2:
   dependencies:
     lodash "^4.6.1"
 
+babel-plugin-react-transform@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-transform/-/babel-plugin-react-transform-3.0.0.tgz#402f25137b7bb66e9b54ead75557dfbc7ecaaa74"
+  dependencies:
+    lodash "^4.6.1"
+
 babel-plugin-syntax-async-functions@^6.5.0, babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-async-functions/-/babel-plugin-syntax-async-functions-6.13.0.tgz#cad9cad1191b5ad634bf30ae0872391e0647be95"
@@ -648,6 +654,10 @@ babel-plugin-syntax-class-properties@^6.5.0, babel-plugin-syntax-class-propertie
 babel-plugin-syntax-decorators@^6.1.18:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-decorators/-/babel-plugin-syntax-decorators-6.13.0.tgz#312563b4dbde3cc806cee3e416cceeaddd11ac0b"
+
+babel-plugin-syntax-dynamic-import@^6.18.0:
+  version "6.18.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-dynamic-import/-/babel-plugin-syntax-dynamic-import-6.18.0.tgz#8d6a26229c83745a9982a441051572caa179b1da"
 
 babel-plugin-syntax-exponentiation-operator@^6.8.0:
   version "6.13.0"
@@ -932,15 +942,15 @@ babel-preset-es2015-node@^6.1.1:
     babel-plugin-transform-es2015-unicode-regex "6.x"
     semver "5.x"
 
-babel-preset-expo@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/babel-preset-expo/-/babel-preset-expo-3.0.0.tgz#b15abf298ae3187bb61180d41d8d4e60553d0972"
+babel-preset-expo@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-expo/-/babel-preset-expo-4.0.0.tgz#5a87e427d4e3d6384e30a3d5f25d99a990980cb3"
   dependencies:
     babel-plugin-module-resolver "^2.7.1"
     babel-plugin-transform-decorators-legacy "^1.3.4"
     babel-plugin-transform-exponentiation-operator "^6.24.1"
     babel-plugin-transform-export-extensions "^6.22.0"
-    babel-preset-react-native "^2.1.0"
+    babel-preset-react-native "^4.0.0"
 
 babel-preset-fbjs@^2.1.2, babel-preset-fbjs@^2.1.4:
   version "2.1.4"
@@ -987,7 +997,7 @@ babel-preset-jest@^20.0.3:
   dependencies:
     babel-plugin-jest-hoist "^20.0.3"
 
-babel-preset-react-native@^2.0.0, babel-preset-react-native@^2.1.0:
+babel-preset-react-native@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/babel-preset-react-native/-/babel-preset-react-native-2.1.0.tgz#9013ebd82da1c88102bf588810ff59e209ca2b8a"
   dependencies:
@@ -1019,6 +1029,42 @@ babel-preset-react-native@^2.0.0, babel-preset-react-native@^2.1.0:
     babel-plugin-transform-react-jsx "^6.5.0"
     babel-plugin-transform-react-jsx-source "^6.5.0"
     babel-plugin-transform-regenerator "^6.5.0"
+    react-transform-hmr "^1.0.4"
+
+babel-preset-react-native@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-react-native/-/babel-preset-react-native-4.0.0.tgz#3df80dd33a453888cdd33bdb87224d17a5d73959"
+  dependencies:
+    babel-plugin-check-es2015-constants "^6.5.0"
+    babel-plugin-react-transform "^3.0.0"
+    babel-plugin-syntax-async-functions "^6.5.0"
+    babel-plugin-syntax-class-properties "^6.5.0"
+    babel-plugin-syntax-dynamic-import "^6.18.0"
+    babel-plugin-syntax-flow "^6.5.0"
+    babel-plugin-syntax-jsx "^6.5.0"
+    babel-plugin-syntax-trailing-function-commas "^6.5.0"
+    babel-plugin-transform-class-properties "^6.5.0"
+    babel-plugin-transform-es2015-arrow-functions "^6.5.0"
+    babel-plugin-transform-es2015-block-scoping "^6.5.0"
+    babel-plugin-transform-es2015-classes "^6.5.0"
+    babel-plugin-transform-es2015-computed-properties "^6.5.0"
+    babel-plugin-transform-es2015-destructuring "^6.5.0"
+    babel-plugin-transform-es2015-for-of "^6.5.0"
+    babel-plugin-transform-es2015-function-name "^6.5.0"
+    babel-plugin-transform-es2015-literals "^6.5.0"
+    babel-plugin-transform-es2015-modules-commonjs "^6.5.0"
+    babel-plugin-transform-es2015-parameters "^6.5.0"
+    babel-plugin-transform-es2015-shorthand-properties "^6.5.0"
+    babel-plugin-transform-es2015-spread "^6.5.0"
+    babel-plugin-transform-es2015-template-literals "^6.5.0"
+    babel-plugin-transform-flow-strip-types "^6.5.0"
+    babel-plugin-transform-object-assign "^6.5.0"
+    babel-plugin-transform-object-rest-spread "^6.5.0"
+    babel-plugin-transform-react-display-name "^6.5.0"
+    babel-plugin-transform-react-jsx "^6.5.0"
+    babel-plugin-transform-react-jsx-source "^6.5.0"
+    babel-plugin-transform-regenerator "^6.5.0"
+    babel-template "^6.24.1"
     react-transform-hmr "^1.0.4"
 
 babel-register@^6.24.1, babel-register@^6.26.0:
@@ -1384,7 +1430,7 @@ clone-stats@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/clone-stats/-/clone-stats-0.0.1.tgz#b88f94a82cf38b8791d58046ea4029ad88ca99d1"
 
-clone@^1.0.0, clone@^1.0.2:
+clone@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.3.tgz#298d7e2231660f40c003c2ed3140decf3f53085f"
 
@@ -1400,7 +1446,7 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-color-convert@^1.3.0, color-convert@^1.9.0:
+color-convert@^1.9.0, color-convert@^1.9.1:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.1.tgz#c1261107aeb2f294ebffec9ed9ecad529a6097ed"
   dependencies:
@@ -1410,19 +1456,19 @@ color-name@^1.0.0, color-name@^1.1.1:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
 
-color-string@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/color-string/-/color-string-0.3.0.tgz#27d46fb67025c5c2fa25993bfbf579e47841b991"
+color-string@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.5.2.tgz#26e45814bc3c9a7cbd6751648a41434514a773a9"
   dependencies:
     color-name "^1.0.0"
+    simple-swizzle "^0.2.2"
 
-color@^0.11.1:
-  version "0.11.4"
-  resolved "https://registry.yarnpkg.com/color/-/color-0.11.4.tgz#6d7b5c74fb65e841cd48792ad1ed5e07b904d764"
+color@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/color/-/color-2.0.1.tgz#e4ed78a3c4603d0891eba5430b04b86314f4c839"
   dependencies:
-    clone "^1.0.2"
-    color-convert "^1.3.0"
-    color-string "^0.3.0"
+    color-convert "^1.9.1"
+    color-string "^1.5.2"
 
 combined-stream@^1.0.5, combined-stream@~1.0.5:
   version "1.0.5"
@@ -1959,24 +2005,25 @@ expand-range@^1.8.1:
   dependencies:
     fill-range "^2.1.0"
 
-expo@22.0.4:
-  version "22.0.4"
-  resolved "https://registry.yarnpkg.com/expo/-/expo-22.0.4.tgz#484bbb5af414c71e53698a5d29bd92d812650316"
+expo@24.0.2:
+  version "24.0.2"
+  resolved "https://registry.yarnpkg.com/expo/-/expo-24.0.2.tgz#3ff9784afd9efbb8eb739289aa53290ddf31a5a5"
   dependencies:
-    "@expo/vector-icons" "^6.1.0"
-    babel-preset-expo "^3.0.0"
+    "@expo/vector-icons" "^6.2.2"
+    babel-preset-expo "^4.0.0"
     fbemitter "^2.1.1"
+    invariant "^2.2.2"
     lodash.map "^4.6.0"
     lodash.zipobject "^4.1.3"
     lottie-react-native "2.2.7"
-    md5-file "^3.1.1"
-    pretty-format "^20.0.3"
-    prop-types "^15.5.10"
+    md5-file "^3.2.3"
+    pretty-format "^21.2.1"
+    prop-types "^15.6.0"
     qs "^6.5.0"
     react-native-branch "2.0.0-beta.3"
-    react-native-gesture-handler "1.0.0-alpha.28"
-    react-native-maps "0.17.0"
-    react-native-svg "5.4.2"
+    react-native-gesture-handler "1.0.0-alpha.30"
+    react-native-maps "0.17.1"
+    react-native-svg "https://github.com/expo/react-native-svg/archive/5.5.1-exp.1.tar.gz"
     uuid-js "^0.7.5"
     websql "https://github.com/expo/node-websql/archive/18.0.0.tar.gz"
 
@@ -2765,6 +2812,10 @@ ipaddr.js@1.5.2:
 is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
+
+is-arrayish@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.3.1.tgz#c2dfc386abaa0c3e33c48db3fe87059e69065efd"
 
 is-buffer@^1.1.5:
   version "1.1.6"
@@ -3685,7 +3736,7 @@ match-require@^2.0.0:
   dependencies:
     uuid "^3.0.0"
 
-md5-file@^3.1.1:
+md5-file@^3.2.3:
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/md5-file/-/md5-file-3.2.3.tgz#f9bceb941eca2214a4c0727f5e700314e770f06f"
   dependencies:
@@ -4393,6 +4444,13 @@ pretty-format@^20.0.3:
     ansi-regex "^2.1.1"
     ansi-styles "^3.0.0"
 
+pretty-format@^21.2.1:
+  version "21.2.1"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-21.2.1.tgz#ae5407f3cf21066cd011aa1ba5fce7b6a2eddb36"
+  dependencies:
+    ansi-regex "^3.0.0"
+    ansi-styles "^3.2.0"
+
 pretty-format@^4.2.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-4.3.1.tgz#530be5c42b3c05b36414a7a2a4337aa80acd0e8d"
@@ -4430,7 +4488,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.6, prop-types@^15.5.8:
+prop-types@^15.5.10, prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
@@ -4583,15 +4641,15 @@ react-native-branch@2.0.0-beta.3:
   version "2.0.0-beta.3"
   resolved "https://registry.yarnpkg.com/react-native-branch/-/react-native-branch-2.0.0-beta.3.tgz#2167af86bbc9f964bd45bd5f37684e5b54965e32"
 
-react-native-gesture-handler@1.0.0-alpha.28:
-  version "1.0.0-alpha.28"
-  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.0.0-alpha.28.tgz#198c776b7b7d299f9b03017f666a9829f996e30d"
+react-native-gesture-handler@1.0.0-alpha.30:
+  version "1.0.0-alpha.30"
+  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.0.0-alpha.30.tgz#7f79c2da5a59cc8ce20cf04c11360409a53bef59"
   dependencies:
     prop-types "^15.5.10"
 
-react-native-maps@0.17.0:
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.17.0.tgz#d10fa94a049432c46b6ee03fe9db84c83da65c8b"
+react-native-maps@0.17.1:
+  version "0.17.1"
+  resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.17.1.tgz#ab2236341fd984dac8864202ae55331bc262f60c"
 
 react-native-safe-module@^1.1.0:
   version "1.2.0"
@@ -4619,11 +4677,11 @@ react-native-scripts@1.7.0:
     rimraf "^2.6.1"
     xdl "46.0.1"
 
-react-native-svg@5.4.2:
-  version "5.4.2"
-  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-5.4.2.tgz#a01b4d88cda4b8ef4b2bc1adf05e11ec93a77b79"
+"react-native-svg@https://github.com/expo/react-native-svg/archive/5.5.1-exp.1.tar.gz":
+  version "5.5.1"
+  resolved "https://github.com/expo/react-native-svg/archive/5.5.1-exp.1.tar.gz#0c6e373dbe63cfcbdd465f5b2965ebe011c8962f"
   dependencies:
-    color "^0.11.1"
+    color "^2.0.1"
     lodash "^4.16.6"
 
 react-native-vector-icons@4.4.2:
@@ -5213,6 +5271,12 @@ simple-plist@^0.2.1:
     bplist-creator "0.0.7"
     bplist-parser "0.1.1"
     plist "2.0.1"
+
+simple-swizzle@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/simple-swizzle/-/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
+  dependencies:
+    is-arrayish "^0.3.1"
 
 slash@^1.0.0:
   version "1.0.0"
