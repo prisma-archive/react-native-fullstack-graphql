@@ -18,6 +18,7 @@
 
 You need to have the following things installed:
 
+* [Expo](https://expo.io/)
 * Node 8+
 * Graphcool CLI: `npm i -g graphcool@beta`
 * GraphQL CLI: `npm i -g graphql-cli`
