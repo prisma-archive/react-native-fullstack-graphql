@@ -1,8 +1,0 @@
-{
-  "request": {
-    "url": "__RELAY_API_ENDPOINT_",
-    "headers": {
-      "Authorization": "xxxxx"
-    }
-  }
-}
