@@ -10,7 +10,7 @@
 		"react": "16.0.0-alpha.6",
 		"react-apollo": "1.4.16",
 		"react-native": "0.44.3",
-		"react-native-elements": "0.12.2",
+		"react-native-elements": "0.18.5",
 		"react-native-lock": "0.6.1",
 		"react-native-router-flux": "3.38.0",
 		"react-native-vector-icons": "4.4.3",
