@@ -1,105 +1,95 @@
-# React Native & Apollo Quickstart
+# react-native-apollo-basic
 
-* [React Native](https://facebook.github.io/react-native/): Javascript framework for building native mobile apps with [React](https://facebook.github.io/react/)
-* [Apollo Client](https://github.com/apollographql/apollo-client): Fully-featured, production ready caching GraphQL client
-* [Graphcool](https://www.graph.cool): Flexible backend platform combining GraphQL + AWS Lambda
+🚀 Basic starter code for a mobile app based on React Native, GraphQL & Apollo Client.
 
-## Quickstart
+![](https://imgur.com/LG6r1q1.png)
 
-### 1. Clone example repository
+## Technologies
 
-```sh
-git clone https://github.com/graphcool-examples/react-native-graphql.git
-cd react-native-graphql/quickstart-with-apollo
-```
+* **Frontend**
+  * [React Native](https://facebook.github.io/react-native/): JavaScript framework for building native mobile apps with [React](https://facebook.github.io/react/)
+  * [Apollo Client](https://github.com/apollographql/apollo-client): Fully-featured, production ready caching GraphQL client
+* **Backend**
+  * [Graphcool](https://www.graph.cool): Powerful GraphQL database
+  * [`graphql-yoga`](https://github.com/graphcool/graphql-yoga/): Fully-featured GraphQL server with focus on easy setup, performance & great developer experience
+  * [`graphcool-binding`](https://github.com/graphcool/graphcool-binding): GraphQL binding for Graphcool services
 
-### 2. Create Graphcool service with the [Graphcool CLI](https://docs-next.graph.cool/reference/graphcool-cli/overview-zboghez5go)
+## Requirements
 
-```sh
-# Install Graphcool Framework CLI
-npm install -g graphcool
+You need to have the following things installed:
 
-# Create a new service inside a directory called `server`
-graphcool init server
-```
+* Node 8+
+* Graphcool CLI: `npm i -g graphcool@beta`
+* GraphQL CLI: `npm i -g graphql-cli`
+* GraphQL Playground desktop app (optional): [Download](https://github.com/graphcool/graphql-playground/releases)
 
-This created the following file structure in the current directory:
-
-```
-.
-└── server
-    ├── graphcool.yml
-    ├── types.graphql
-    └── src
-        ├── hello.graphql
-        └── hello.js
-```
-
-### 3. Define data model
-
-Next, you need to define your data model inside the newly created `types.graphql`-file.
-
-Replace the current contents in `types.graphql` with the following type definition (you can delete the predefined `User` type):
-
-```graphql
-type Post @model {
-  # Required system field
-  id: ID! @isUnique # read-only (managed by Graphcool)
-
-  # Optional system fields (remove if not needed)
-  createdAt: DateTime! # read-only (managed by Graphcool)
-  updatedAt: DateTime! # read-only (managed by Graphcool)
-
-  description: String!
-  imageUrl: String!
-}
-```
-
-### 4. Deploy the GraphQL server
-
-You're now ready to put your Graphcool service into production! Navigate into the `server` directory and [deploy](https://docs-next.graph.cool/reference/graphcool-cli/commands-aiteerae6l#graphcool-deploy) the service:
+## Getting started
 
 ```sh
-cd server
-graphcool deploy
-```
+# Bootstrap GraphQL server in directory `my-app`, based on `react-fullstack-basic` boilerplate
+graphql create my-app --boilerplate react-native-basic
 
-Save the HTTP endpoint for the `Simple API` from the output, you'll need it in the next step.
+# Navigate into the new project's `server` directory
+cd my-app/server
 
-> **Note**: You can now test your GraphQL API inside a GraphQL playground. Simply type the `graphcool playground` command and start sending queries and mutations.
+# Deploy the Graphcool database & start the server (runs on http://localhost:4000)
+yarn start
 
-
-### 5. Connect the app with your GraphQL API
-
-Paste the HTTP endpoint for the `Simple API` that you saved after running `graphcool deploy` into `./App.js` as the `uri` argument in the `HttpLink` constructor call:
-
-```js
-// replace `__SIMPLE_API_ENDPOINT__` with the endpoint from the previous step
-const httpLink = new HttpLink({ uri: '__SIMPLE_API_ENDPOINT__' })
-```
-
-> **Note**: If you ever lose your endpoint, you can get access to it again with the `graphcool info` command.
-
-### 6. Install dependencies & run locally
-
-```sh
+# Navigate back into the project's root directory and launch the React app
 cd ..
-yarn install
 yarn start          # open using the Expo app on your phone
 # yarn run ios      # open with iOS simulator
 # yarn run android  # open with Android emulator
 ```
 
-## Next steps
+<details>
 
-* [Documentation](https://docs-next.graph.cool)
-* [Advanced GraphQL features](https://blog.graph.cool/advanced-graphql-features-of-the-graphcool-api-5b8db3b0a71)
-* [Authentication & Permissions](https://www.graph.cool/docs/reference/auth/overview-ohs4aek0pe/)
-* [Implementing business logic with serverless functions](https://www.graph.cool/docs/reference/functions/overview-aiw4aimie9/)
+<summary>Alternative: Clone repo</summary>
 
+```sh
+TODO
+```
 
-## Help & Community [![Slack Status](https://slack.graph.cool/badge.svg)](https://slack.graph.cool)
+</details>
 
-Join our [Slack community](http://slack.graph.cool/) if you run into issues or have questions. We love talking to you!
+## Docs
 
-![](http://i.imgur.com/5RHR6Ku.png)
+### Project structure
+
+#### `/server`
+
+- [`.graphqlconfig.yml`](./server/.graphqlconfig.yml) GraphQL configuration file containing the endpoints and schema configuration. Used by the [`graphql-cli`](https://github.com/graphcool/graphql-cli) and the [GraphQL Playground](https://github.com/graphcool/graphql-playground). See [`graphql-config`](https://github.com/graphcool/graphql-config) for more information.
+- [`graphcool.yml`](./server/graphcool.yml): The root configuration file for your database service ([documentation](https://www.graph.cool/docs/1.0/reference/graphcool.yml/overview-and-example-foatho8aip)).
+
+#### `/server/database`
+
+- [`database/datamodel.graphql`](./server/database/datamodel.graphql) contains the data model that you define for the project (written in [SDL](https://blog.graph.cool/graphql-sdl-schema-definition-language-6755bcb9ce51)).
+- [`database/schema.generated.graphql`](./server/database/schema.generated.graphql) defines the **database schema**. It contains the definition of the CRUD API for the types in your data model and is generated based on your `datamodel.graphql`. **You should never edit this file manually**, but introduce changes only by altering `datamodel.graphql` and run `graphcool deploy`.
+
+#### `/server/src`
+
+- [`src/schema.graphql`](src/schema.graphql) defines your **application schema**. It contains the GraphQL API that you want to expose to your client applications.
+- [`src/index.js`](src/index.js) is the entry point of your server, pulling everything together and starting the `GraphQLServer` from [`graphql-yoga`](https://github.com/graphcool/graphql-yoga).
+
+### Common questions
+
+#### I'm getting a 'Schema could not be fetched.' error after deploying, what gives?
+
+Access to the Graphcool API is secured by a secret. This also applies to the introspection query. Using the latest version of GraphQL Playground, the `Authorization` header should automatically be setup with a proper JWT signing the secret. If that's not the case, you can follow these steps to access your API:
+
+1. Visit http://jwtbuilder.jamiekurtz.com/
+1. Replace the `Key` at the bottom of the page with your `secret` from the [`graphcool.yml`](./server/graphcool.yml#L5)
+1. Click `Create signed JWT` and copy the obtained token
+1. Now, to access the schema, use the `Authorization: Bearer <token>` header, or in the GraphQL Playground set it as JSON:
+    ```json
+    {
+      "Authorization": "Bearer <token>"
+    }
+    ```
+1. Reload the schema in the Playground (the _refresh_-button is located right next to the URL of the server)
+
+> Note: Currently, no content of the signed JWT is verified by the database! This will be implemented [according to this proposal](https://github.com/graphcool/framework/issues/1365) at a later stage.
+
+## Contributing
+
+Your feedback is **very helpful**, please share your opinion and thoughts! If you have any questions, join the [`#graphql-boilerplate`](https://graphcool.slack.com/messages/graphql-boilerplate) channel on our [Slack](https://graphcool.slack.com/).
