@@ -17,6 +17,6 @@
   },
   "devDependencies": {
     "eslint": "3.19.0",
-    "eslint-config-anf": "0.4.4"
+    "eslint-config-anf": "0.6.0"
   }
 }
