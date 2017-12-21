@@ -1,10 +1,14 @@
-❌ This project is currently in a **broken** state: There seems to be a dependency issue when running the app in the simulator: Unable to resolve module `react-native/Libraries/Renderer/shims/ReactNativeBridgeEventPlugin` from `.../node_modules/react-native-gesture-handler/GestureHandler.js`: Module does not exist in the module map. ❌ 
-
 **PRs are welcome!**
 
 # react-native-apollo-basic
 
 🚀 Basic starter code for a mobile app based on React Native, GraphQL & Apollo Client.
+
+## TODO (❌  **This project is currently broken** ❌)
+
+- [ ] Fix runtime issue
+- [ ] Enable in [https://github.com/graphql-cli/graphql-cli/blob/master/src/cmds/create/boilerplates.ts](https://github.com/graphql-cli/graphql-cli/blob/master/src/cmds/create/boilerplates.ts)
+
 
 ![](https://imgur.com/LG6r1q1.png)
 
