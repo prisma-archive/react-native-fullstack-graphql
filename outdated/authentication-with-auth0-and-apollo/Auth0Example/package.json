@@ -12,7 +12,7 @@
 		"react-native": "0.44.3",
 		"react-native-elements": "0.12.2",
 		"react-native-lock": "0.6.1",
-		"react-native-router-flux": "3.38.0",
+		"react-native-router-flux": "3.43.0",
 		"react-native-vector-icons": "4.4.3",
 		"styled-components": "2.3.3"
 	},
