@@ -4,7 +4,7 @@
   "private": true,
   "devDependencies": {
     "babel-plugin-react-relay": "0.10.0",
-    "jest-expo": "0.3.1",
+    "jest-expo": "0.4.0",
     "react-native-scripts": "0.0.25",
     "react-test-renderer": "15.4.2"
   },
