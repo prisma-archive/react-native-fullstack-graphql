@@ -25,6 +25,6 @@
     "graphql-tag": "2.6.1",
     "react": "16.2.0",
     "react-apollo": "2.0.4",
-    "react-native": "0.49.0"
+    "react-native": "0.51.0"
   }
 }
