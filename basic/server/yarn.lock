@@ -510,6 +510,15 @@ graphql-import@0.1.8, graphql-import@^0.1.7, graphql-import@^0.1.8:
     graphql "^0.12.3"
     lodash "^4.17.4"
 
+graphql-import@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/graphql-import/-/graphql-import-0.1.9.tgz#9161f4f7ea92337b60fd40e22e64d3a68c212729"
+  dependencies:
+    "@types/graphql" "0.11.7"
+    "@types/lodash" "^4.14.85"
+    graphql "^0.12.3"
+    lodash "^4.17.4"
+
 graphql-playground-html@^1.3.13:
   version "1.3.13"
   resolved "https://registry.yarnpkg.com/graphql-playground-html/-/graphql-playground-html-1.3.13.tgz#ac1b0491af1052fb0cbb090e054f6f6fa2797486"
@@ -560,9 +569,9 @@ graphql-tools@^2.14.0, graphql-tools@^2.14.1:
     deprecated-decorator "^0.1.6"
     uuid "^3.1.0"
 
-graphql-yoga@0.5.6:
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-0.5.6.tgz#f41e31491138d6b78afc6c1fddfdcd07543e0ac2"
+graphql-yoga@0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-0.7.0.tgz#a19f42f2c8f72144783c7eeff3215495859a3b03"
   dependencies:
     "@types/cors" "^2.8.3"
     "@types/express" "^4.0.39"
@@ -574,6 +583,7 @@ graphql-yoga@0.5.6:
     cors "^2.8.4"
     express "^4.16.2"
     graphql "^0.12.0"
+    graphql-import "^0.1.9"
     graphql-playground-middleware-express "^1.3.13"
     graphql-subscriptions "^0.5.6"
     graphql-tools "^2.14.0"
