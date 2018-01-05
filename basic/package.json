@@ -6,7 +6,7 @@
     "flow-bin": "0.62.0",
     "jest-expo": "24.0.0",
     "react-native-scripts": "1.8.1",
-    "react-test-renderer": "16.2.0"
+    "react-test-renderer": "16.0.0"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
@@ -24,7 +24,7 @@
     "expo": "24.0.2",
     "graphql": "0.12.3",
     "graphql-tag": "2.6.1",
-    "react": "16.2.0",
+    "react": "16.0.0",
     "react-apollo": "2.0.4",
     "react-native": "https://github.com/expo/react-native/archive/sdk-24.0.0.tar.gz"
   }
