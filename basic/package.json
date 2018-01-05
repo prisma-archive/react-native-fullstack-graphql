@@ -4,7 +4,7 @@
   "private": true,
   "devDependencies": {
     "flow-bin": "0.49.1",
-    "jest-expo": "^24.0.0",
+    "jest-expo": "24.0.0",
     "react-native-scripts": "1.8.1",
     "react-test-renderer": "16.0.0"
   },
@@ -20,8 +20,8 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "apollo-client-preset": "^1.0.5",
-    "expo": "^24.0.2",
+    "apollo-client-preset": "1.0.5",
+    "expo": "24.0.2",
     "graphql": "0.12.3",
     "graphql-tag": "2.6.1",
     "react": "16.0.0",
