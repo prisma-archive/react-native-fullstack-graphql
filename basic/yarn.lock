@@ -2243,10 +2243,6 @@ find-up@^2.0.0, find-up@^2.1.0:
   dependencies:
     locate-path "^2.0.0"
 
-flow-bin@0.62.0:
-  version "0.62.0"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.62.0.tgz#14bca669a6e3f95c0bc0c2d1eb55ec4e98cb1d83"
-
 follow-redirects@^1.2.3:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.2.6.tgz#4dcdc7e4ab3dd6765a97ff89c3b4c258117c79bf"
