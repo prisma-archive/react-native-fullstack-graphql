@@ -1,0 +1,16 @@
+{
+  "name": "minimal-server",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "now --public && now alias && now rm --yes --safe graphql-template-node"
+  },
+  "dependencies": {
+    "graphql-yoga": "1.1.4"
+  },
+  "devDependencies": {
+    "now": "9.0.1"
+  },
+  "now": {
+    "alias": "graphql-template-node"
+  }
+}
