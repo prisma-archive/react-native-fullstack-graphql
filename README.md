@@ -1,3 +1,5 @@
+> **Note:** This repository is currently outdated. Contributions are very welcome! You can compare to https://github.com/graphql-boilerplates/react-fullstack-graphql and join the [`#graphql-boilerplate`](https://graphcool.slack.com/messages/graphql-boilerplate) channel on our [Slack](https://graphcool.slack.com/) for more information.
+
 # react-native-fullstack-graphql
 
 🚀 Starter projects for mobile applications based on React Native & GraphQL.
