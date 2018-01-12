@@ -12,7 +12,7 @@ module.exports = async ({ project, projectDir }) => {
   const templateName = 'graphql-boilerplate'
 
   replaceInFiles(
-    ['server/src/index.js', 'server/package.json'],
+    ['server/index.js', 'server/package.json'],
     templateName,
     project,
   )
