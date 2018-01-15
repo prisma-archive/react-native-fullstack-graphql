@@ -9,7 +9,7 @@
     "graphql-yoga": "1.1.7"
   },
   "devDependencies": {
-    "now": "9.0.1"
+    "now": "9.1.0"
   },
   "now": {
     "alias": "graphql-template-node"
