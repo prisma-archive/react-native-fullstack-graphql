@@ -3,8 +3,6 @@
 
 🚀 Basic starter code for a mobile app based on React Native, GraphQL & Apollo Client.
 
-![](https://imgur.com/LG6r1q1.png)
-
 ## TODO
 
 - [ ] Fix runtime issue
@@ -28,7 +26,6 @@ You need to have the following things installed:
 
 * [Expo](https://expo.io/)
 * Node 8+
-* Graphcool CLI: `npm i -g graphcool@beta`
 * GraphQL CLI: `npm i -g graphql-cli`
 * GraphQL Playground desktop app (optional): [Download](https://github.com/graphcool/graphql-playground/releases)
 
