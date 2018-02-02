@@ -1,8 +1,7 @@
 {
   "name": "myapp21",
   "scripts": {
-    "start": "graphcool deploy && node src/index.js",
-    "deploy": "now --public && now alias && now rm --yes --safe graphql-template-node"
+    "start": "graphcool deploy && node src/index.js"
   },
   "dependencies": {
     "graphcool-binding": "1.3.5",
