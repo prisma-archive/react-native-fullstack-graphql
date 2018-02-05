@@ -1,24 +1,18 @@
 
-# react-native-apollo-basic
+# react-native-fullstack-graphql-basic
 
 🚀 Basic starter code for a mobile app based on React Native, GraphQL & Apollo Client.
-
-## TODO
-
-- [ ] Fix runtime issue
-- [ ] Enable in [https://github.com/graphql-cli/graphql-cli/blob/master/src/cmds/create/boilerplates.ts](https://github.com/graphql-cli/graphql-cli/blob/master/src/cmds/create/boilerplates.ts)
-
-> **PRs are very welcome** 🙏
 
 ## Technologies
 
 * **Frontend**
   * [React Native](https://facebook.github.io/react-native/): JavaScript framework for building native mobile apps with [React](https://facebook.github.io/react/)
+  * [Expo](https://expo.io): Free and open source toolchain build around React Native to help you build native iOS and Android projects using JavaScript and React.
   * [Apollo Client](https://github.com/apollographql/apollo-client): Fully-featured, production ready caching GraphQL client
 * **Backend**
-  * [Graphcool](https://www.graph.cool): Powerful GraphQL database
+  * [Prisma](https://www.prismagraphql.com): Turns your database into a GraphQL API
   * [`graphql-yoga`](https://github.com/graphcool/graphql-yoga/): Fully-featured GraphQL server with focus on easy setup, performance & great developer experience
-  * [`graphcool-binding`](https://github.com/graphcool/graphcool-binding): GraphQL binding for Graphcool services
+  * [`prisma-binding`](https://github.com/graphcool/prisma-binding): [GraphQL binding](https://blog.graph.cool/reusing-composing-graphql-apis-with-graphql-bindings-80a4aa37cff5) for Prisma services
 
 ## Requirements
 
@@ -27,38 +21,54 @@ You need to have the following things installed:
 * [Expo](https://expo.io/)
 * Node 8+
 * GraphQL CLI: `npm i -g graphql-cli`
-* GraphQL Playground desktop app (optional): [Download](https://github.com/graphcool/graphql-playground/releases)
 
 ## Getting started
 
 ```sh
-# Bootstrap GraphQL server in directory `my-app`, based on `react-fullstack-basic` boilerplate
+# 1. Bootstrap GraphQL server in directory `my-app`, based on `react-native-basic` boilerplate
 graphql create my-app --boilerplate react-native-basic
 
-# Navigate into the new project's `server` directory
+# 2. When prompted, choose the Prisma cluster you want to deploy to
+# e.g. prisma-eu1 or prisma-us1 to deploy to a public cluster (recommended)
+# or locally (requires Docker)
+
+# 3. Navigate into the `server` directory of the new project
 cd my-app/server
 
-# Deploy the Graphcool database & start the server (runs on http://localhost:4000)
+# 4. Start the server
+yarn start # the server is now running on http://localhost:4000
+
+# 5. Open a new tab in the terminal and navigate back into my-app
+# then run the app
+cd ..
 yarn start
 
-# Navigate back into the project's root directory and launch the React app
-cd ..
-yarn run ios        # open with iOS simulator
-# yarn run android  # open with Android emulator
-# yarn start        # open using the Expo app on your phone (does not work when server is deployed locally)
+# 6. Open the app in a simulator or device of your choice
+# open using the Expo app on your phone (does not work when server is deployed locally)
 ```
 
-<details>
-
-<summary>Alternative: Clone repo</summary>
+If you'd rather not use `graphql-cli`, follow these instructions:
 
 ```sh
-TODO
+# 1. 
 ```
 
-</details>
-
 ## Docs
+
+### Commands
+
+#### While in the `server` folder
+
+* `yarn start` starts GraphQL server on `http://localhost:4000` (only allows access to the _application_)
+* `yarn dev` starts GraphQL server and opens the GraphQL Playground for the `projects` defined in [`.graphqlconfig.yml`](./.graphqlconfig.yml)
+* `yarn playground` opens the GraphQL Playground for the `projects` defined in [`.graphqlconfig.yml`](./.graphqlconfig.yml)
+* `yarn prisma <subcommand>` access to local version of Prisma CLI (e.g. `yarn prisma deploy`)
+
+#### While no in the `server` folder
+
+* `yarn start` 
+* `yarn run ios` opens the iOS Simulator
+* `yarn run android` opens the Android emulator
 
 ### Project structure
 

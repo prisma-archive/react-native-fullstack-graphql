@@ -3,8 +3,13 @@
 
 
 "@babel/code-frame@^7.0.0-beta.35":
+<<<<<<< Updated upstream
   version "7.0.0-beta.39"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.39.tgz#91c90bb65207fc5a55128cb54956ded39e850457"
+=======
+  version "7.0.0-beta.38"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.38.tgz#c0af5930617e55e050336838e3a3670983b0b2b2"
+>>>>>>> Stashed changes
   dependencies:
     chalk "^2.0.0"
     esutils "^2.0.2"
@@ -113,8 +118,13 @@ acorn-globals@^4.1.0:
     acorn "^5.0.0"
 
 acorn@^5.0.0, acorn@^5.3.0:
+<<<<<<< Updated upstream
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.4.0.tgz#51c581c9d4b1943dda59a3e73bcf02661ac727ea"
+=======
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.3.0.tgz#7446d39459c54fb49a80e6ee6478149b940ec822"
+>>>>>>> Stashed changes
 
 agent-base@2, agent-base@^2.1.1:
   version "2.1.1"
@@ -3222,9 +3232,15 @@ jest-environment-node@^22.1.4:
     jest-mock "^22.1.0"
     jest-util "^22.1.4"
 
+<<<<<<< Updated upstream
 jest-expo@25.1.0:
   version "25.1.0"
   resolved "https://registry.yarnpkg.com/jest-expo/-/jest-expo-25.1.0.tgz#7f91d0c93f3dadaa8f45dab065d06bccd0519a8c"
+=======
+jest-expo@25.0.0:
+  version "25.0.0"
+  resolved "https://registry.yarnpkg.com/jest-expo/-/jest-expo-25.0.0.tgz#c17b77b66091aca174445405a19ce2ae88e27dd9"
+>>>>>>> Stashed changes
   dependencies:
     babel-jest "^22.1.0"
     jest "^22.1.1"
@@ -3382,6 +3398,7 @@ jest-validate@^22.1.2:
 jest-worker@22.1.0, jest-worker@^22.1.0:
   version "22.1.0"
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-22.1.0.tgz#0987832fe58fbdc205357f4c19b992446368cafb"
+<<<<<<< Updated upstream
   dependencies:
     merge-stream "^1.0.1"
 
@@ -3389,6 +3406,15 @@ jest@^22.1.1:
   version "22.1.4"
   resolved "https://registry.yarnpkg.com/jest/-/jest-22.1.4.tgz#9ec71373a38f40ff92a3e5e96ae85687c181bb72"
   dependencies:
+=======
+  dependencies:
+    merge-stream "^1.0.1"
+
+jest@^22.1.1:
+  version "22.1.4"
+  resolved "https://registry.yarnpkg.com/jest/-/jest-22.1.4.tgz#9ec71373a38f40ff92a3e5e96ae85687c181bb72"
+  dependencies:
+>>>>>>> Stashed changes
     jest-cli "^22.1.4"
 
 joi@^10.0.2:
@@ -3429,8 +3455,13 @@ jsbn@~0.1.0:
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
 
 jsdom@^11.5.1:
+<<<<<<< Updated upstream
   version "11.6.2"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-11.6.2.tgz#25d1ef332d48adf77fc5221fe2619967923f16bb"
+=======
+  version "11.6.0"
+  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-11.6.0.tgz#7334781595ee8bdeea9742fc33fab5cdad6d195f"
+>>>>>>> Stashed changes
   dependencies:
     abab "^1.0.4"
     acorn "^5.3.0"
@@ -3445,7 +3476,11 @@ jsdom@^11.5.1:
     html-encoding-sniffer "^1.0.2"
     left-pad "^1.2.0"
     nwmatcher "^1.4.3"
+<<<<<<< Updated upstream
     parse5 "4.0.0"
+=======
+    parse5 "^4.0.0"
+>>>>>>> Stashed changes
     pn "^1.1.0"
     request "^2.83.0"
     request-promise-native "^1.0.5"
@@ -3792,8 +3827,13 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
     js-tokens "^3.0.0"
 
 lottie-ios@^2.1.5:
+<<<<<<< Updated upstream
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/lottie-ios/-/lottie-ios-2.5.0.tgz#55c808e785d4a6933b0c10b395530b17098b05de"
+=======
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/lottie-ios/-/lottie-ios-2.1.5.tgz#33be2a74fbf2614a6b6f302506dc21c1090c585a"
+>>>>>>> Stashed changes
 
 lottie-react-native@2.3.2:
   version "2.3.2"
@@ -3912,6 +3952,7 @@ methods@^1.1.1, methods@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
 
+<<<<<<< Updated upstream
 metro-core@0.24.7, metro-core@^0.24.4:
   version "0.24.7"
   resolved "https://registry.yarnpkg.com/metro-core/-/metro-core-0.24.7.tgz#89e4fbea5bad574eb971459ebfa74c028f52d278"
@@ -3921,12 +3962,28 @@ metro-core@0.24.7, metro-core@^0.24.4:
 metro-source-map@0.24.7:
   version "0.24.7"
   resolved "https://registry.yarnpkg.com/metro-source-map/-/metro-source-map-0.24.7.tgz#b13d0ae6417c2a2cd3d521ae6cd898196748ec0b"
+=======
+metro-core@0.24.6, metro-core@^0.24.4:
+  version "0.24.6"
+  resolved "https://registry.yarnpkg.com/metro-core/-/metro-core-0.24.6.tgz#fe75f06bbb21d594f8eed75880fb5cc9e0ccddf7"
+  dependencies:
+    lodash "^4.16.6"
+
+metro-source-map@0.24.6:
+  version "0.24.6"
+  resolved "https://registry.yarnpkg.com/metro-source-map/-/metro-source-map-0.24.6.tgz#6c64b958b47696e365aacf508e726ae5820959a4"
+>>>>>>> Stashed changes
   dependencies:
     source-map "^0.5.6"
 
 metro@^0.24.4:
+<<<<<<< Updated upstream
   version "0.24.7"
   resolved "https://registry.yarnpkg.com/metro/-/metro-0.24.7.tgz#42cecdb236b702d16243812294f7d3b97c43378d"
+=======
+  version "0.24.6"
+  resolved "https://registry.yarnpkg.com/metro/-/metro-0.24.6.tgz#a7b01c3c7d1d1868f232d2d92a8bc4ecc251e909"
+>>>>>>> Stashed changes
   dependencies:
     absolute-path "^0.0.0"
     async "^2.4.0"
@@ -3957,8 +4014,13 @@ metro@^0.24.4:
     left-pad "^1.1.3"
     lodash.throttle "^4.1.1"
     merge-stream "^1.0.1"
+<<<<<<< Updated upstream
     metro-core "0.24.7"
     metro-source-map "0.24.7"
+=======
+    metro-core "0.24.6"
+    metro-source-map "0.24.6"
+>>>>>>> Stashed changes
     mime-types "2.1.11"
     mkdirp "^0.5.1"
     request "^2.79.0"
@@ -4451,7 +4513,11 @@ parse-json@^2.2.0:
   dependencies:
     error-ex "^1.2.0"
 
+<<<<<<< Updated upstream
 parse5@4.0.0:
+=======
+parse5@^4.0.0:
+>>>>>>> Stashed changes
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-4.0.0.tgz#6d78656e3da8d78b4ec0b906f7c08ef1dfe3f608"
 
@@ -5546,8 +5612,13 @@ source-map-support@^0.4.15, source-map-support@^0.4.2:
     source-map "^0.5.6"
 
 source-map-support@^0.5.0:
+<<<<<<< Updated upstream
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.3.tgz#2b3d5fff298cfa4d1afd7d4352d569e9a0158e76"
+=======
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.2.tgz#1a6297fd5b2e762b39688c7fc91233b60984f0a5"
+>>>>>>> Stashed changes
   dependencies:
     source-map "^0.6.0"
 
@@ -5961,8 +6032,13 @@ ua-parser-js@^0.7.9:
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.17.tgz#e9ec5f9498b9ec910e7ae3ac626a805c4d09ecac"
 
 uglify-es@^3.1.9:
+<<<<<<< Updated upstream
   version "3.3.9"
   resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.3.9.tgz#0c1c4f0700bed8dbc124cdb304d2592ca203e677"
+=======
+  version "3.3.8"
+  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.3.8.tgz#f2c68e6cff0d0f9dc9577e4da207151c2e753b7e"
+>>>>>>> Stashed changes
   dependencies:
     commander "~2.13.0"
     source-map "~0.6.1"
