@@ -29,7 +29,7 @@
     "apollo-client-preset": "1.0.8",
     "expo": "25.0.0",
     "graphql": "0.13.1",
-    "graphql-tag": "2.6.1",
+    "graphql-tag": "2.7.3",
     "react": "16.2.0",
     "react-apollo": "2.0.4",
     "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz"
