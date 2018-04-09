@@ -1,0 +1,16 @@
+{
+  "name": "graphql-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "react-native",
+    "prisma",
+    "graphcool"
+  ],
+  "author": "Subramanya Chakravarthy",
+  "dependencies": {
+    "graphql-yoga": "^1.8.2"
+  }
+}
