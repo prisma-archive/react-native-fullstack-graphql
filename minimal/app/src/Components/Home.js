@@ -10,13 +10,13 @@ export class Home extends Component {
       <View style={styles.container} >
         <Query query={HELLO_QUERY} >
           {props => {
-            console.log(props)
+            {/* console.log(props) */ }
             const { data, error, loading, refetch } = props;
-            if (loading) {
-              return <Text>loading</Text>
-            }
             if (error) {
               return <Text>An unexpected error occurred</Text>
+            }
+            if (loading) {
+              return <Text>loading</Text>
             }
             return (
               <View>
