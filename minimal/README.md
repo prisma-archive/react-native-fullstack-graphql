@@ -46,9 +46,9 @@ yarn start
 
 # Navigate back into the project's root directory and launch the React app
 cd ..
+exp:start           # start react-native server
 yarn run ios        # open with iOS simulator
-# yarn run android  # open with Android emulator
-# yarn start        # open using the Expo app on your phone (does not work when server is deployed locally)
+yarn run android  # open with Android emulator
 ```
 
 <details>
