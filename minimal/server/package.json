@@ -9,8 +9,12 @@
     "prisma",
     "graphcool"
   ],
-  "author": "Subramanya Chakravarthy",
   "dependencies": {
     "graphql-yoga": "^1.8.2"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
   }
 }

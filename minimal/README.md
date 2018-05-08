@@ -1,14 +1,8 @@
-
-# react-native-apollo-basic
+# react-native-apollo-minimal
 
 🚀 Basic starter code for a mobile app based on React Native, GraphQL & Apollo Client.
 
 ![](https://imgur.com/LG6r1q1.png)
-
-## TODO
-
-- [ ] Fix runtime issue
-- [ ] Enable in [https://github.com/graphql-cli/graphql-cli/blob/master/src/cmds/create/boilerplates.ts](https://github.com/graphql-cli/graphql-cli/blob/master/src/cmds/create/boilerplates.ts)
 
 > **PRs are very welcome** 🙏
 
@@ -16,6 +10,7 @@
 
 * **Frontend**
   * [React Native](https://facebook.github.io/react-native/): JavaScript framework for building native mobile apps with [React](https://facebook.github.io/react/)
+  * [Expo](https://expo.io/): The fastest way to build an app
   * [Apollo Client](https://github.com/apollographql/apollo-client): Fully-featured, production ready caching GraphQL client
 * **Backend**
   * [Graphcool](https://www.graph.cool): Powerful GraphQL database
@@ -41,14 +36,17 @@ graphql create my-app --boilerplate react-native-minimal
 # Navigate into the new project's `server` directory
 cd my-app/server
 
+#install dependencies
+yarn
+
 # Deploy the Graphcool database & start the server (runs on http://localhost:4000)
 yarn start
 
 # Navigate back into the project's root directory and launch the React app
 cd ..
-exp:start           # start react-native server
-yarn run ios        # open with iOS simulator
-yarn run android  # open with Android emulator
+yarn exp:start     # start react-native server
+yarn run ios       # open with iOS simulator
+yarn run android   # open with Android emulator
 ```
 
 <details>
