@@ -1,0 +1,18 @@
+{
+  "name": "graphql-boilerplate",
+  "version": "1.0.0",
+  "description": "Advance graphql server boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.13.1"
+  },
+  "keywords": ["react-native", "prisma", "graphcool"],
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}
