@@ -33,7 +33,7 @@ You need to have the following things installed:
 
 ```sh
 # Bootstrap GraphQL server in directory `my-app`, based on `react-fullstack-basic` boilerplate
-graphql create my-app --boilerplate react-native-basic
+graphql create my-app --boilerplate react-fullstack-basic
 
 # Navigate into the new project's `server` directory
 cd my-app/server
