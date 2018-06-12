@@ -10,7 +10,7 @@
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-react": "7.7.0",
     "eslint-plugin-react-native": "3.2.1",
-    "jest-expo": "25.1.0",
+    "jest-expo": "28.0.0",
     "react-native-scripts": "1.11.1",
     "react-test-renderer": "16.2.0"
   },
