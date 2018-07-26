@@ -2356,9 +2356,9 @@ expect@^22.1.0:
     jest-message-util "^22.1.0"
     jest-regex-util "^22.1.0"
 
-expo@25.0.0:
-  version "25.0.0"
-  resolved "https://registry.yarnpkg.com/expo/-/expo-25.0.0.tgz#791d0052e159d56854a84d90540bf11c33abfe4d"
+expo@25.1.2:
+  version "25.1.2"
+  resolved "https://registry.yarnpkg.com/expo/-/expo-25.1.2.tgz#120d8bc867cfb1c556035b6ff386ffef95fa3ebb"
   dependencies:
     "@expo/vector-icons" "^6.2.0"
     babel-preset-expo "^4.0.0"
