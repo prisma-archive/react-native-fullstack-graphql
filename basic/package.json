@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "apollo-client-preset": "1.0.8",
-    "expo": "25.0.0",
+    "expo": "30.0.1",
     "graphql": "0.13.1",
     "graphql-tag": "2.8.0",
     "react": "16.2.0",
